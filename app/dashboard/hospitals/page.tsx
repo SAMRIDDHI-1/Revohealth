@@ -19,7 +19,7 @@ const mockHospitals = [
     address: "123 Healthcare Ave",
     specialties: ["Cardiology", "Neurology", "Pediatrics"],
     rating: 4.8,
-    position: [40.7128, -74.0060],
+    position: [40.7128, -74.0060] as [number, number],
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const mockHospitals = [
     address: "456 Medical Drive",
     specialties: ["Orthopedics", "Oncology", "Surgery"],
     rating: 4.6,
-    position: [40.7580, -73.9855],
+    position: [40.7580, -73.9855] as [number, number],
   },
 ]
 
