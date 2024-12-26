@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Custom Layers */
+@layer base {
+  :root {
+    --background: hsl(210, 16%, 96%);
+    --foreground: hsl(210, 22%, 16%);
+    --card: hsl(0, 0%, 100%);
+    --border: hsl(210, 16%, 82%);
+  }
+
+  .dark {
+    --background: hsl(210, 22%, 16%);
+    --foreground: hsl(0, 0%, 100%);
+    --card: hsl(210, 22%, 16%);
+    --border: hsl(210, 22%, 26%);
+  }
+}
+
+@layer utilities {
+  .border-border {
+    border-color: var(--border);
+  }
+}
+
+/* Global Styles */
+body {
+  @apply bg-background text-foreground;
+}
