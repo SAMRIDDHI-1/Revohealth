@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { CreditCard, FileText, AlertCircle, CheckCircle2, Clock } from "lucide-react"
 
-// Mock claims data
 const mockClaims = [
   {
     id: 1,

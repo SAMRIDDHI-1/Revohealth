@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -8,8 +8,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-module.exports = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
 
