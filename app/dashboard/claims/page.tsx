@@ -6,12 +6,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { CreditCard, FileText, AlertCircle, CheckCircle2, Clock } from "lucide-react"
 
+// Mock claims data
 const mockClaims = [
   {
     id: 1,
     title: "Annual Check-up",
     date: "2024-03-01",
-    amount: 150.00,
+    amount: 150.0,
     status: "Approved",
     provider: "City Medical Center",
     claimNumber: "CLM-2024-001",
@@ -21,7 +22,7 @@ const mockClaims = [
     id: 2,
     title: "Dental Cleaning",
     date: "2024-02-15",
-    amount: 85.00,
+    amount: 85.0,
     status: "Processing",
     provider: "Smile Dental Clinic",
     claimNumber: "CLM-2024-002",
@@ -31,7 +32,7 @@ const mockClaims = [
     id: 3,
     title: "Blood Tests",
     date: "2024-02-01",
-    amount: 200.00,
+    amount: 200.0,
     status: "Pending",
     provider: "City Medical Center",
     claimNumber: "CLM-2024-003",
@@ -105,7 +106,9 @@ export default function ClaimsPage() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Processing Progress</span>
+                    <span className="text-muted-foreground">
+                      Processing Progress
+                    </span>
                     <span>{claim.progress}%</span>
                   </div>
                   <Progress value={claim.progress} />
